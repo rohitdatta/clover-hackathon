@@ -19,7 +19,7 @@ def get_code():
 	if user_obj:
 		if not redis_store.hget(username+":pinged"):
 			token_hex = redis_store.hmget(username, "push_key")
-			# send_notification(token_hex)
+			send_notification(token_hex)
 			redis_store.setex(username+":pinged", True, 300)
 
 	code_bytes = os.urandom(128)
