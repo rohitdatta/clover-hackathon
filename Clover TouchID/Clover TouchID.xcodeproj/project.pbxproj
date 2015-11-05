@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810CE2F6618431E002319A19 /* Pods_Clover_TouchID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51F45992B9252AC8AB2BF7B /* Pods_Clover_TouchID.framework */; };
 		F956FB431BEBDA3000540F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956FB421BEBDA3000540F0D /* AppDelegate.swift */; };
 		F956FB451BEBDA3000540F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956FB441BEBDA3000540F0D /* ViewController.swift */; };
 		F956FB481BEBDA3000540F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F956FB461BEBDA3000540F0D /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		F956FB4D1BEBDA3000540F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F956FB4B1BEBDA3000540F0D /* LaunchScreen.storyboard */; };
 		F956FB581BEBDA3000540F0D /* Clover_TouchIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956FB571BEBDA3000540F0D /* Clover_TouchIDTests.swift */; };
 		F956FB631BEBDA3000540F0D /* Clover_TouchIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956FB621BEBDA3000540F0D /* Clover_TouchIDUITests.swift */; };
+		F95D485A1BEBDE7F00CE4AD7 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95D48591BEBDE7F00CE4AD7 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A537F038F733016BAE726B /* Pods-Clover TouchID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clover TouchID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clover TouchID/Pods-Clover TouchID.debug.xcconfig"; sourceTree = "<group>"; };
+		E51F45992B9252AC8AB2BF7B /* Pods_Clover_TouchID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clover_TouchID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4F9CAE1A7EAD767BAEEA80 /* Pods-Clover TouchID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clover TouchID.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clover TouchID/Pods-Clover TouchID.release.xcconfig"; sourceTree = "<group>"; };
 		F956FB3F1BEBDA2F00540F0D /* Clover TouchID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clover TouchID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F956FB421BEBDA3000540F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F956FB441BEBDA3000540F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		F956FB5E1BEBDA3000540F0D /* Clover TouchIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clover TouchIDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F956FB621BEBDA3000540F0D /* Clover_TouchIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clover_TouchIDUITests.swift; sourceTree = "<group>"; };
 		F956FB641BEBDA3000540F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95D48591BEBDE7F00CE4AD7 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95D485A1BEBDE7F00CE4AD7 /* LocalAuthentication.framework in Frameworks */,
+				810CE2F6618431E002319A19 /* Pods_Clover_TouchID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14FCC99BE068790E2BDAFB00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09A537F038F733016BAE726B /* Pods-Clover TouchID.debug.xcconfig */,
+				ED4F9CAE1A7EAD767BAEEA80 /* Pods-Clover TouchID.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE319D54FDCA562CDC6B5C82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E51F45992B9252AC8AB2BF7B /* Pods_Clover_TouchID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F956FB361BEBDA2F00540F0D = {
 			isa = PBXGroup;
 			children = (
+				F95D48591BEBDE7F00CE4AD7 /* LocalAuthentication.framework */,
 				F956FB411BEBDA3000540F0D /* Clover TouchID */,
 				F956FB561BEBDA3000540F0D /* Clover TouchIDTests */,
 				F956FB611BEBDA3000540F0D /* Clover TouchIDUITests */,
 				F956FB401BEBDA2F00540F0D /* Products */,
+				14FCC99BE068790E2BDAFB00 /* Pods */,
+				AE319D54FDCA562CDC6B5C82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F956FB671BEBDA3000540F0D /* Build configuration list for PBXNativeTarget "Clover TouchID" */;
 			buildPhases = (
+				42C0800C48243D2A813F299F /* Check Pods Manifest.lock */,
 				F956FB3B1BEBDA2F00540F0D /* Sources */,
 				F956FB3C1BEBDA2F00540F0D /* Frameworks */,
 				F956FB3D1BEBDA2F00540F0D /* Resources */,
+				CCC23A41C8127AEFF5A6E1D3 /* Embed Pods Frameworks */,
+				9D221519A59AA6BDFA545648 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42C0800C48243D2A813F299F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D221519A59AA6BDFA545648 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clover TouchID/Pods-Clover TouchID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC23A41C8127AEFF5A6E1D3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clover TouchID/Pods-Clover TouchID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F956FB3B1BEBDA2F00540F0D /* Sources */ = {
@@ -397,6 +476,7 @@
 		};
 		F956FB681BEBDA3000540F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A537F038F733016BAE726B /* Pods-Clover TouchID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Clover TouchID/Info.plist";
@@ -408,6 +488,7 @@
 		};
 		F956FB691BEBDA3000540F0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4F9CAE1A7EAD767BAEEA80 /* Pods-Clover TouchID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Clover TouchID/Info.plist";
@@ -484,6 +565,7 @@
 				F956FB691BEBDA3000540F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F956FB6A1BEBDA3000540F0D /* Build configuration list for PBXNativeTarget "Clover TouchIDTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +574,7 @@
 				F956FB6C1BEBDA3000540F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F956FB6D1BEBDA3000540F0D /* Build configuration list for PBXNativeTarget "Clover TouchIDUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +583,7 @@
 				F956FB6F1BEBDA3000540F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
