@@ -1,6 +1,7 @@
 from flask import Blueprint, Response, request, session
 import os, string, time
 from app import redis_store
+from app.notification import send_notification
 
 login = Blueprint('login', __name__, url_prefix='/login')
 
