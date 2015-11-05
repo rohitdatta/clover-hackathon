@@ -16,7 +16,7 @@ def get_code():
 	if not username:
 		return "ERROR NO USERNAME"
 	code_bytes = os.urandom(128)
-	code = ''.join(map(lambda x: string.printable[ord(x)%len(string.printable)], code_bytes))
+	code = ''.join(map(lambda x: string.ascii_letters[ord(x)%len(string.ascii_letters)], code_bytes))
 	redis_store.setex(username+":temp_key", str(code), 15)
 	return str(code)
 
