@@ -1,8 +1,6 @@
 from flask import Blueprint, Response, request, session
 import os, string, time
 from app import redis_store
-from apns import APNs, Frame, Payload
-
 
 login = Blueprint('login', __name__, url_prefix='/login')
 
@@ -27,20 +25,6 @@ def get_code():
 	code = ''.join(map(lambda x: string.ascii_letters[ord(x)%len(string.ascii_letters)], code_bytes))
 	redis_store.setex(username+":temp_key", str(code), 15)
 	return str(code)
-
-def send_notification(push_key):
-	apns = APNs(use_sandbox=True, cert_file='auth_cert.pem', key_file='auth_key.pem')
-
-	
-	payload = Payload(alert="Unlock your iPhone to login", sound="default", badge=1)
-	apns.gateway_server.send_notification(token_hex, payload)
-
-	frame = Frame()
-	identifier = 1
-	expiry = time.time()+3600
-	priority = 10
-	frame.add_item(token_hex, payload, identifier, expiry, priority)
-	apns.gateway_server.send_notification_multiple(frame)
 
 @login.route('/register', methods=['POST'])
 def register():
