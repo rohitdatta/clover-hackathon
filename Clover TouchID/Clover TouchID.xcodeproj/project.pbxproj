@@ -14,6 +14,7 @@
 		F956FB4D1BEBDA3000540F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F956FB4B1BEBDA3000540F0D /* LaunchScreen.storyboard */; };
 		F956FB581BEBDA3000540F0D /* Clover_TouchIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956FB571BEBDA3000540F0D /* Clover_TouchIDTests.swift */; };
 		F956FB631BEBDA3000540F0D /* Clover_TouchIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956FB621BEBDA3000540F0D /* Clover_TouchIDUITests.swift */; };
+		F95D485A1BEBDE7F00CE4AD7 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95D48591BEBDE7F00CE4AD7 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F956FB5E1BEBDA3000540F0D /* Clover TouchIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clover TouchIDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F956FB621BEBDA3000540F0D /* Clover_TouchIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clover_TouchIDUITests.swift; sourceTree = "<group>"; };
 		F956FB641BEBDA3000540F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95D48591BEBDE7F00CE4AD7 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95D485A1BEBDE7F00CE4AD7 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		F956FB361BEBDA2F00540F0D = {
 			isa = PBXGroup;
 			children = (
+				F95D48591BEBDE7F00CE4AD7 /* LocalAuthentication.framework */,
 				F956FB411BEBDA3000540F0D /* Clover TouchID */,
 				F956FB561BEBDA3000540F0D /* Clover TouchIDTests */,
 				F956FB611BEBDA3000540F0D /* Clover TouchIDUITests */,
@@ -484,6 +488,7 @@
 				F956FB691BEBDA3000540F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F956FB6A1BEBDA3000540F0D /* Build configuration list for PBXNativeTarget "Clover TouchIDTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				F956FB6C1BEBDA3000540F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F956FB6D1BEBDA3000540F0D /* Build configuration list for PBXNativeTarget "Clover TouchIDUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				F956FB6F1BEBDA3000540F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
