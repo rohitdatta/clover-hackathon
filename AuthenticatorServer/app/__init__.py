@@ -1,4 +1,4 @@
-from flask import Flask, g, session
+ from flask import Flask, g, session
 from flask.ext.redis import FlaskRedis
 
 redis_store = FlaskRedis()
