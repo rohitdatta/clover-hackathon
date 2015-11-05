@@ -58,8 +58,8 @@
     [self dismissViewControllerAnimated:YES completion:^{
         NSLog(@"%@", result);
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-            NSDictionary *result = [AuthAPI sendRequest:@{@"key": result, @"uuid": [FCUUID uuidForDevice], @"push_token":[[NSUserDefaults standardUserDefaults] objectForKey:@"apntoken"] } toEndpoint:@"login" withType:@"POST"];
-            if (result) {
+            NSDictionary *response = [AuthAPI sendRequest:@{@"key": result, @"uuid": [FCUUID uuidForDevice], @"push_token":[[NSUserDefaults standardUserDefaults] objectForKey:@"apntoken"] } toEndpoint:@"login" withType:@"POST"];
+            if (response) {
                 //good
             }else {
                 //fail
