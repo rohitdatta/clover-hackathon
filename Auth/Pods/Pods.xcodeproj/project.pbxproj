@@ -1,0 +1,1250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CCEF329FB3708795E57A411AE2C1085 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DC4E851538A64DCC8206023B545F4F /* UIImageView+AFNetworking.m */; };
+		1490BD851992D6C035825FE5B4AB0A1E /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EDE97255ED0780D03F92B97B5C7526BF /* UIButton+AFNetworking.h */; };
+		1BFF8288283FE860AA0AF064D1576CA9 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB5F25D526225E2CFAD368C8293200 /* QRToggleTorchButton.m */; };
+		1E93B85CE20183759A75D32E2BCDB04F /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D69454052D5A5D722A92A28884B0CA /* AFURLSessionManager.h */; };
+		227DE6F6FF277607189A490DBA5E41FD /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D83C832E49FE9167D29BC5C8DF2D76F /* AFHTTPRequestOperationManager.h */; };
+		2387246065A368BBF48919FDC5CDFE9C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0D29344C7FA3844D42B1AEE130B96 /* AFURLConnectionOperation.m */; };
+		2491505C09CDD6FDB287552A6CC8F524 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */; };
+		251E4E16679E3F7D70BA83E0D078182E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1D375E38A9A9663A8566889D95CD76 /* MobileCoreServices.framework */; };
+		2530432D4883E5EEEB643FA0631643F6 /* QRCodeReaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E06763D333063B8761AFBFBB3EDA3 /* QRCodeReaderDelegate.h */; };
+		30A108B101E826D100DC9F5851D0306E /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7BBEE44076DB5BE52D25288824599 /* AFURLResponseSerialization.h */; };
+		323979DF99E43AD1AB6D57EBF81574C0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD4BCB9B8612878B4E7BB372C8261A /* AFSecurityPolicy.m */; };
+		33474D71CB4E35D8455D52CA3A61012D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D211FC39EBA807313A9FA8CAA3AA8E /* SystemConfiguration.framework */; };
+		38BB6A039E7D9C2B3E54870D16E2D61B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F3BF88CA7AADC9B6874498CB78175B5 /* AFHTTPSessionManager.h */; };
+		3C39395B76B04061EA010CB241E16F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */; };
+		3CF2372C546876C6890A15E3466D206C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */; };
+		3D8FDC5C812E2B31AC13501629B69D1D /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CF9588901EA2BAA41BDC175BCB2EF7 /* UIAlertView+AFNetworking.m */; };
+		3F99ED25D1F3A6AFF0B46EDC1C3A4CC8 /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A48C246A65CC40A492AC8094199D955 /* QRCodeReader.h */; };
+		404AC5D895FF0025E63CEBC81C29768E /* FCUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 39234D74BCE74FCEF80515475C5BA794 /* FCUUID.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4098DFA74E1A974217632A2B0ADE6AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */; };
+		418E11320418B93CCA57F30F5A160FE7 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB230230044BA3D470EDB1F5BCB14FC8 /* AFNetworkActivityIndicatorManager.h */; };
+		43F63E5C85E2401FA075AC4846D5D216 /* FCUUID-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5CC3E76E0596806C429E475281BD44 /* FCUUID-dummy.m */; };
+		466AECD05B5DC95EEBD5E15E0D657C32 /* Pods-Auth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DBDCE3F0DF35AC6D47C8F6AD2841BD /* Pods-Auth-dummy.m */; };
+		4D103FB6F961C4B71E3E327D421A2452 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9A792B039DCD89048ECF34FB6A1D44 /* Security.framework */; };
+		50221716FD30DBDDFEC7FD366DA5B35C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2187BA2D091C62FC2A276FD7DFB46 /* AFURLSessionManager.m */; };
+		508ED98B4C490D717156CAD310A5EF4E /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 785BA441EFA82A1AD3342EB8F6683507 /* AFNetworking.h */; };
+		511C696B5E0BF2113DD0ADBC56DBF0DE /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DE63169CA7ABB1FEEEF6BFDFC66DBC3D /* UIProgressView+AFNetworking.m */; };
+		587921E28F8DFCE37F78345837D0CD7F /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D493C3E76670FAA1F9DA383F1EFAD05C /* QRCodeReaderView.m */; };
+		588F7B740DCBE670C5441CA97FE42DA0 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 90CD867C88668D3B1B2A77EBFCA90094 /* AFURLConnectionOperation.h */; };
+		626E9D4FCFAE76C62EB59DED72481156 /* QRCodeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F21DD7A5F91B3E68F9D77D6BAD9FDE /* QRCodeReaderView.h */; };
+		635A2DE11F1EE180FDA811CE53B726C8 /* UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1C02FAEC252F81812F3E98DBA4DD06 /* UICKeyChainStore-dummy.m */; };
+		65A24850C26A7207B5D59AB33A8E6FAB /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBCC9547CF7AC7D53CDC0971688EE77 /* AFHTTPRequestOperationManager.m */; };
+		66E9BBA9927A3699986A85202B95D715 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 487519D4F0B91D0E59EB1AE16999008A /* UIWebView+AFNetworking.h */; };
+		685C8FB58EB9BF7B3B6A0F9AFBB42613 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE70D2E94F7907BE49CAB7BCAD12F96 /* UIAlertView+AFNetworking.h */; };
+		688F6334EB24AD1913B1125696670ED8 /* FCUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 031DEC76D29E770A293133C9916CDBE5 /* FCUUID.h */; };
+		6BFCDC0FF21BA4A8D6E49E22C0E955A3 /* AFHTTPRequestOperationManager+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = 7033372D154C22F88FCCB1FA6D72197A /* AFHTTPRequestOperationManager+Synchronous.m */; };
+		6FD39BFAB02A240F5044711C05719B0C /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 431F8B7CBA0882C9F3A10B1CFCBB7566 /* UIRefreshControl+AFNetworking.h */; };
+		7003AA8CF93750B7A2612DCF6BC67345 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D0EEFBC2BF7A8CCC04904056933DB /* AFURLRequestSerialization.m */; };
+		719016631D2CF6B03585D2DF2AEAF37A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4822B315517ADF7B2483270630B9A /* UIRefreshControl+AFNetworking.m */; };
+		73E69CD7083C88FA57530612F9F6067C /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF0B647F6041296A4048F06CAF9F92 /* UIButton+AFNetworking.m */; };
+		74B7DFFBE3C095E62343E6A7DEDDAE7B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3FB731B2CF2FCE06E6C9E3A97AF8A9 /* UIActivityIndicatorView+AFNetworking.h */; };
+		77777B340D13BBA98E168994053B8B8C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EB7A580DDCF6C7803C4A6D158243D1 /* AFURLResponseSerialization.m */; };
+		7A0FACDEC505B1A5ACFEDAB6FCCA1993 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */; };
+		7B9F239D33D0C08EB8FFB8C6CE53444F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */; };
+		7FCCEA75A1C17944CE503EB8F9DCA9DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8A2B526BFDF8B99AC39C3FA65EA0B7 /* CoreGraphics.framework */; };
+		81AAEC456E5312B3D46F35071F34F283 /* QRToggleTorchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 865DE41BCA976771B187826455B7A549 /* QRToggleTorchButton.h */; };
+		8A87456B99E7DAA5F84F3EC7E7AF6230 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4B6F4C3552805F5A20D5359B177061 /* QRCodeReaderViewController.m */; };
+		8BF79BB0BDF7C3806232014A07FA40DC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4760883E3CA041ABCA3CF391B6B9470E /* AFHTTPSessionManager.m */; };
+		8DAD2E5B5AC8C49E749989C0A9431CBE /* AFNetworking-Synchronous-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53C612A3418F531E0AE7DEA52EC1B /* AFNetworking-Synchronous-dummy.m */; };
+		8EB6CA74AF13A82D492DC222393C6440 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6626BBD7721AB766E2367CA3DB3C35FB /* UIImage+AFNetworking.h */; };
+		902EDD20F2254A372EBF57FE71E6A935 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4327CAC6E1981A2F2E81589EE23FBB59 /* AFNetworkReachabilityManager.m */; };
+		985D0899D08627D35421054D69024E6D /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4B7D597417F85D6E00B81EA94D849E /* UICKeyChainStore.h */; };
+		9D053B1B4618447798A39F0C1CC92CF9 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB460B50C6AEDAEA64926E0E7CE69185 /* UIActivityIndicatorView+AFNetworking.m */; };
+		9EDD311A489F2D1E9E58792C1A3540BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9A792B039DCD89048ECF34FB6A1D44 /* Security.framework */; };
+		A99F87BC7C5D1D9EB23ABC36C0B9C14D /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8BBFE28D6278B2EE8DB876BAA3A90E /* AFNetworkReachabilityManager.h */; };
+		BA98B628159D5A008EFB87E10907BF46 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9A792B039DCD89048ECF34FB6A1D44 /* Security.framework */; };
+		BF9281DFA035D3B9C541E3CFAAC72D48 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 86201E4DC84CB0EDF9B8C3B341E96AA5 /* UIProgressView+AFNetworking.h */; };
+		C1FE7F0930A5C05BE4ECF600090059C7 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8092C732504BFF6D12CA748FCF186E79 /* AFURLRequestSerialization.h */; };
+		C6AB31B45E4FCD94A012962CE90DF4D3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B8D45F2545B76FD6CC42AD69A8344 /* UIWebView+AFNetworking.m */; };
+		CB64EB2FA71A39840735FFDB08D8CC8E /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDDE19D49C5EA66727E41D9FF4A8F7 /* QRCameraSwitchButton.m */; };
+		CCB898F4FA4080C4A89F29FC375E6A88 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BFCD885A1D43BBDD01D1F4FDAEDEB46 /* AFSecurityPolicy.h */; };
+		CE16F862875207B1FF9D11559ED4392D /* AFHTTPRequestOperationManager+Synchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B39F652A96F1B18CB3069A1B627742 /* AFHTTPRequestOperationManager+Synchronous.h */; };
+		D422EF663A9F287DFC00AD75F23597B4 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1120A2BA7BFFB178EE885421E9380720 /* UIImageView+AFNetworking.h */; };
+		DB8CE3CA687753EC29091D5A72769748 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C1D5AC515E8DFE877FE3B39C2E1578 /* QRCodeReader.m */; };
+		E2EE66410DD4D77A3F5AA35B05F608FA /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D6FB75D3C8B1C1BF37794A53DE53AC74 /* UIKit+AFNetworking.h */; };
+		E6B2FE87B3068A54B4AA6B47C83DCF39 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5119DF5704F13C125F5EDE7E5B897D8 /* AFNetworking-dummy.m */; };
+		E82039DF0259035F8B418DEE9C31EAB5 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ADC9A4B294E6BD6CD4C41793E981CC8 /* AFHTTPRequestOperation.h */; };
+		ED13D631EF0F3036C6B74B6729D71297 /* QRCodeReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9603B129B0961C9B4987AD0F068C46C1 /* QRCodeReaderViewController.h */; };
+		F5608D3183B6CDC122DAAD5435C77CE8 /* QRCodeReaderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 777C4299ABAED760777CE6CE734B44E6 /* QRCodeReaderViewController-dummy.m */; };
+		F643CA0B8307417ED466FE2190035440 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0329BDD9EEFB7AD9952346617D4CC /* AFHTTPRequestOperation.m */; };
+		F80373F1D42BFD3DF37F4815FB3ECC2D /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F870A6EDBF2355A4CC3B2B04F1A4AB /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB9EDBE46CB639E50BD32EAC08EAE719 /* QRCameraSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BA27B441D065B39857277BEA5B781EBF /* QRCameraSwitchButton.h */; };
+		FBC82C2359DF43AB0261EBB815436675 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B20E699D7B70E18A1D7980449CB265B /* UIKit.framework */; };
+		FDBD08996620A1C6B901DCDAC272AF2F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2DA2864DA63F0673F2559B180829BD /* AVFoundation.framework */; };
+		FF24CD0FC7EE8B347B2A0356B91C6BF0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA909720381CE51487679766C9F89D09 /* AFNetworkActivityIndicatorManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F7354959CECB094605D9F194CC1622C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCE8E1670678A8C5DB0675A000F12096;
+			remoteInfo = QRCodeReaderViewController;
+		};
+		6183F59A4461E9B5A80B440317924D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A612FA2910317246AABB109C35B5EA33;
+			remoteInfo = AFNetworking;
+		};
+		6287B1AA1FA070C52373BFED576DAF43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C86CDCFBDD7B951618F544A8E2CC0D2;
+			remoteInfo = UICKeyChainStore;
+		};
+		8251156D7A71D7415BC6FD44DB707F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A612FA2910317246AABB109C35B5EA33;
+			remoteInfo = AFNetworking;
+		};
+		96ACF747F38BC1ED78CC26D248C2A36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C86CDCFBDD7B951618F544A8E2CC0D2;
+			remoteInfo = UICKeyChainStore;
+		};
+		C7A56D4902A974D244BA4B1A2AC8676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E2944BE4908340EB642D9A00C8071C;
+			remoteInfo = "AFNetworking-Synchronous";
+		};
+		EBFE38463EC7E945AC064617E662E4EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34558AF77F7B398E1BC5914C1F6D6DFB;
+			remoteInfo = FCUUID;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031DEC76D29E770A293133C9916CDBE5 /* FCUUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCUUID.h; path = FCUUID/FCUUID.h; sourceTree = "<group>"; };
+		0A0E5EED48D97B326B311FF4C8BA394A /* libFCUUID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFCUUID.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A48C246A65CC40A492AC8094199D955 /* QRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = QRCodeReaderViewController/QRCodeReader.h; sourceTree = "<group>"; };
+		0ADC9A4B294E6BD6CD4C41793E981CC8 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		0C2DA2864DA63F0673F2559B180829BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		0CE0EAAC0B6C53FE4BFE58E8637688B3 /* AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		0EF7BBEE44076DB5BE52D25288824599 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		1120A2BA7BFFB178EE885421E9380720 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		11D69454052D5A5D722A92A28884B0CA /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		1700BE038B4B7CC82DF79A9D1422FF60 /* UICKeyChainStore-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UICKeyChainStore-Private.xcconfig"; sourceTree = "<group>"; };
+		1AA4822B315517ADF7B2483270630B9A /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		1CBCC9547CF7AC7D53CDC0971688EE77 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		1E8BBFE28D6278B2EE8DB876BAA3A90E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		209CF3C8F21D64193611AA242DAF5038 /* FCUUID-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FCUUID-Private.xcconfig"; sourceTree = "<group>"; };
+		2154E2F6F56E9E0F50C02E3136F147EA /* FCUUID.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FCUUID.xcconfig; sourceTree = "<group>"; };
+		22FD4BCB9B8612878B4E7BB372C8261A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		25D5DBB03264DDCFF072F01128BEE836 /* libPods-Auth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C1D5AC515E8DFE877FE3B39C2E1578 /* QRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = QRCodeReaderViewController/QRCodeReader.m; sourceTree = "<group>"; };
+		2BFCD885A1D43BBDD01D1F4FDAEDEB46 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		2D15002220D1F62B5535C2A5C9447C61 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		2D9A792B039DCD89048ECF34FB6A1D44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		32B39F652A96F1B18CB3069A1B627742 /* AFHTTPRequestOperationManager+Synchronous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AFHTTPRequestOperationManager+Synchronous.h"; path = "2.x/AFHTTPRequestOperationManager+Synchronous.h"; sourceTree = "<group>"; };
+		371E06763D333063B8761AFBFBB3EDA3 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = QRCodeReaderViewController/QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		39234D74BCE74FCEF80515475C5BA794 /* FCUUID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCUUID.m; path = FCUUID/FCUUID.m; sourceTree = "<group>"; };
+		3CC0329BDD9EEFB7AD9952346617D4CC /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		3E3FB731B2CF2FCE06E6C9E3A97AF8A9 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		3EFDDE19D49C5EA66727E41D9FF4A8F7 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = QRCodeReaderViewController/QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		41F21DD7A5F91B3E68F9D77D6BAD9FDE /* QRCodeReaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = QRCodeReaderViewController/QRCodeReaderView.h; sourceTree = "<group>"; };
+		431F8B7CBA0882C9F3A10B1CFCBB7566 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		4327CAC6E1981A2F2E81589EE23FBB59 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		458B8D45F2545B76FD6CC42AD69A8344 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		4760883E3CA041ABCA3CF391B6B9470E /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		487519D4F0B91D0E59EB1AE16999008A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		4D83C832E49FE9167D29BC5C8DF2D76F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		5B23371E693E85A45BB0C7E45BB28F10 /* AFNetworking-Synchronous-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AFNetworking-Synchronous-Private.xcconfig"; sourceTree = "<group>"; };
+		631377CC56F967C4CC44B9DADE06668F /* QRCodeReaderViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "QRCodeReaderViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		63E2187BA2D091C62FC2A276FD7DFB46 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		64B164831028CF25BBE14B6D027547CE /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		6626BBD7721AB766E2367CA3DB3C35FB /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		6BFF0B647F6041296A4048F06CAF9F92 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		6F1D375E38A9A9663A8566889D95CD76 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		6F3BF88CA7AADC9B6874498CB78175B5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		7033372D154C22F88FCCB1FA6D72197A /* AFHTTPRequestOperationManager+Synchronous.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AFHTTPRequestOperationManager+Synchronous.m"; path = "2.x/AFHTTPRequestOperationManager+Synchronous.m"; sourceTree = "<group>"; };
+		73CF9588901EA2BAA41BDC175BCB2EF7 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		73DF6E581F4F2083D313CFA0D5DD7681 /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
+		777C4299ABAED760777CE6CE734B44E6 /* QRCodeReaderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReaderViewController-dummy.m"; sourceTree = "<group>"; };
+		785BA441EFA82A1AD3342EB8F6683507 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		79FB1D4A03C67F73AD23B3772DD0F559 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B20E699D7B70E18A1D7980449CB265B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F7D0EEFBC2BF7A8CCC04904056933DB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		8092C732504BFF6D12CA748FCF186E79 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		86201E4DC84CB0EDF9B8C3B341E96AA5 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		865DE41BCA976771B187826455B7A549 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = QRCodeReaderViewController/QRToggleTorchButton.h; sourceTree = "<group>"; };
+		88D211FC39EBA807313A9FA8CAA3AA8E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		88DBDCE3F0DF35AC6D47C8F6AD2841BD /* Pods-Auth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Auth-dummy.m"; sourceTree = "<group>"; };
+		89CE79228E8259BB26270DA44328119B /* AFNetworking-Synchronous.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AFNetworking-Synchronous.xcconfig"; sourceTree = "<group>"; };
+		8B2F94069DCA2F589023081CA25A55F6 /* QRCodeReaderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReaderViewController.xcconfig; sourceTree = "<group>"; };
+		90C53C612A3418F531E0AE7DEA52EC1B /* AFNetworking-Synchronous-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-Synchronous-dummy.m"; sourceTree = "<group>"; };
+		90CD867C88668D3B1B2A77EBFCA90094 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		91DDFB02A54237F75E0E30CA1624478F /* UICKeyChainStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.xcconfig; sourceTree = "<group>"; };
+		9603B129B0961C9B4987AD0F068C46C1 /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = QRCodeReaderViewController/QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		98F870A6EDBF2355A4CC3B2B04F1A4AB /* UICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Lib/UICKeyChainStore.m; sourceTree = "<group>"; };
+		A09949E3129AB2935BA441BC6170E116 /* Pods-Auth-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Auth-resources.sh"; sourceTree = "<group>"; };
+		A7F120E5A5F08380B971B8AA134B3012 /* FCUUID-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCUUID-prefix.pch"; sourceTree = "<group>"; };
+		AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AF1776527AE0E774E6C6664D5B74F6B5 /* Pods-Auth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Auth-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B5119DF5704F13C125F5EDE7E5B897D8 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		B6A6A4B3BB5E55D55A9A50B19C6F08C3 /* Pods-Auth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Auth-acknowledgements.plist"; sourceTree = "<group>"; };
+		B6BB5F25D526225E2CFAD368C8293200 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = QRCodeReaderViewController/QRToggleTorchButton.m; sourceTree = "<group>"; };
+		B6DC4E851538A64DCC8206023B545F4F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		B8EB7A580DDCF6C7803C4A6D158243D1 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BA27B441D065B39857277BEA5B781EBF /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = QRCodeReaderViewController/QRCameraSwitchButton.h; sourceTree = "<group>"; };
+		BA2B5AF5A76568FA388CFB5ADCE6F17B /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB460B50C6AEDAEA64926E0E7CE69185 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		BCB0D29344C7FA3844D42B1AEE130B96 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		BF4B6F4C3552805F5A20D5359B177061 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = QRCodeReaderViewController/QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		C09BB2F25ABFDC9F80B30E46BE144588 /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
+		CEB5360E5177023177C962A5F025494F /* QRCodeReaderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-prefix.pch"; sourceTree = "<group>"; };
+		D493C3E76670FAA1F9DA383F1EFAD05C /* QRCodeReaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = QRCodeReaderViewController/QRCodeReaderView.m; sourceTree = "<group>"; };
+		D4B68A17259F1A88F7341EA2CE03634A /* AFNetworking-Synchronous-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-Synchronous-prefix.pch"; sourceTree = "<group>"; };
+		D6FB75D3C8B1C1BF37794A53DE53AC74 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		D7A86C69E6B55EA57037D943E567B48E /* libAFNetworking-Synchronous.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAFNetworking-Synchronous.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1C02FAEC252F81812F3E98DBA4DD06 /* UICKeyChainStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore-dummy.m"; sourceTree = "<group>"; };
+		DC0928D1D1F3D6D4D3CC4B042BC52B73 /* Pods-Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Auth.debug.xcconfig"; sourceTree = "<group>"; };
+		DE63169CA7ABB1FEEEF6BFDFC66DBC3D /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		DEE70D2E94F7907BE49CAB7BCAD12F96 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		DF8D5D627EC6DF4F3CA009A47055E80E /* libQRCodeReaderViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQRCodeReaderViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE97255ED0780D03F92B97B5C7526BF /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		EE8A2B526BFDF8B99AC39C3FA65EA0B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		FA909720381CE51487679766C9F89D09 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		FB230230044BA3D470EDB1F5BCB14FC8 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		FE5CC3E76E0596806C429E475281BD44 /* FCUUID-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FCUUID-dummy.m"; sourceTree = "<group>"; };
+		FF4B7D597417F85D6E00B81EA94D849E /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Lib/UICKeyChainStore.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0153F3B620514898243155000BE968FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4098DFA74E1A974217632A2B0ADE6AA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8641C501A661B45E007E5FD244976299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2491505C09CDD6FDB287552A6CC8F524 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE1A44FF7DD8B47BC20596C0B1CFFE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBD08996620A1C6B901DCDAC272AF2F /* AVFoundation.framework in Frameworks */,
+				3CF2372C546876C6890A15E3466D206C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3A1A7E79CD4693BAA9E3D1C27C514E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCCEA75A1C17944CE503EB8F9DCA9DA /* CoreGraphics.framework in Frameworks */,
+				7B9F239D33D0C08EB8FFB8C6CE53444F /* Foundation.framework in Frameworks */,
+				251E4E16679E3F7D70BA83E0D078182E /* MobileCoreServices.framework in Frameworks */,
+				BA98B628159D5A008EFB87E10907BF46 /* Security.framework in Frameworks */,
+				33474D71CB4E35D8455D52CA3A61012D /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FB2ABAE210712C22FA1D492E305C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0FACDEC505B1A5ACFEDAB6FCCA1993 /* Foundation.framework in Frameworks */,
+				9EDD311A489F2D1E9E58792C1A3540BD /* Security.framework in Frameworks */,
+				FBC82C2359DF43AB0261EBB815436675 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E525309F381999D616218F4DE51914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C39395B76B04061EA010CB241E16F06 /* Foundation.framework in Frameworks */,
+				4D103FB6F961C4B71E3E327D421A2452 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		227721DBF09ADAF71FB8B764B24C30B7 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				2BFCD885A1D43BBDD01D1F4FDAEDEB46 /* AFSecurityPolicy.h */,
+				22FD4BCB9B8612878B4E7BB372C8261A /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		368C70E5335413E84871C5A2FE64BF71 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B164831028CF25BBE14B6D027547CE /* AFNetworking.xcconfig */,
+				0CE0EAAC0B6C53FE4BFE58E8637688B3 /* AFNetworking-Private.xcconfig */,
+				B5119DF5704F13C125F5EDE7E5B897D8 /* AFNetworking-dummy.m */,
+				2D15002220D1F62B5535C2A5C9447C61 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		3CA2C42268812A2DD524E7E541AF6EAF /* Pods-Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AF1776527AE0E774E6C6664D5B74F6B5 /* Pods-Auth-acknowledgements.markdown */,
+				B6A6A4B3BB5E55D55A9A50B19C6F08C3 /* Pods-Auth-acknowledgements.plist */,
+				88DBDCE3F0DF35AC6D47C8F6AD2841BD /* Pods-Auth-dummy.m */,
+				A09949E3129AB2935BA441BC6170E116 /* Pods-Auth-resources.sh */,
+				DC0928D1D1F3D6D4D3CC4B042BC52B73 /* Pods-Auth.debug.xcconfig */,
+				73DF6E581F4F2083D313CFA0D5DD7681 /* Pods-Auth.release.xcconfig */,
+			);
+			name = "Pods-Auth";
+			path = "Target Support Files/Pods-Auth";
+			sourceTree = "<group>";
+		};
+		4629659BBA3A98A3316EE61745500379 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89CE79228E8259BB26270DA44328119B /* AFNetworking-Synchronous.xcconfig */,
+				5B23371E693E85A45BB0C7E45BB28F10 /* AFNetworking-Synchronous-Private.xcconfig */,
+				90C53C612A3418F531E0AE7DEA52EC1B /* AFNetworking-Synchronous-dummy.m */,
+				D4B68A17259F1A88F7341EA2CE03634A /* AFNetworking-Synchronous-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking-Synchronous";
+			sourceTree = "<group>";
+		};
+		481D786FDEC6852C5BF00A63BE34E171 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2C42268812A2DD524E7E541AF6EAF /* Pods-Auth */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4D9B4A2390DC3835E4483708711D6170 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C2DA2864DA63F0673F2559B180829BD /* AVFoundation.framework */,
+				EE8A2B526BFDF8B99AC39C3FA65EA0B7 /* CoreGraphics.framework */,
+				AE71480EF312A1D2BBA6256DDA2BBE2A /* Foundation.framework */,
+				6F1D375E38A9A9663A8566889D95CD76 /* MobileCoreServices.framework */,
+				2D9A792B039DCD89048ECF34FB6A1D44 /* Security.framework */,
+				88D211FC39EBA807313A9FA8CAA3AA8E /* SystemConfiguration.framework */,
+				7B20E699D7B70E18A1D7980449CB265B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		51460E3A45D8FAA70A3B2DB81DC9B8FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2154E2F6F56E9E0F50C02E3136F147EA /* FCUUID.xcconfig */,
+				209CF3C8F21D64193611AA242DAF5038 /* FCUUID-Private.xcconfig */,
+				FE5CC3E76E0596806C429E475281BD44 /* FCUUID-dummy.m */,
+				A7F120E5A5F08380B971B8AA134B3012 /* FCUUID-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FCUUID";
+			sourceTree = "<group>";
+		};
+		636EE8447938353706BFA75677BAAB5B /* AFNetworking-Synchronous */ = {
+			isa = PBXGroup;
+			children = (
+				F68DB6CE7658B577B7D5E35D03D580B9 /* 2.x */,
+				4629659BBA3A98A3316EE61745500379 /* Support Files */,
+			);
+			path = "AFNetworking-Synchronous";
+			sourceTree = "<group>";
+		};
+		6781F76172B596C15812E244431C7B24 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				8092C732504BFF6D12CA748FCF186E79 /* AFURLRequestSerialization.h */,
+				7F7D0EEFBC2BF7A8CCC04904056933DB /* AFURLRequestSerialization.m */,
+				0EF7BBEE44076DB5BE52D25288824599 /* AFURLResponseSerialization.h */,
+				B8EB7A580DDCF6C7803C4A6D158243D1 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		6AF355FA774032203BC4D5C13FB1C87C /* QRCodeReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA27B441D065B39857277BEA5B781EBF /* QRCameraSwitchButton.h */,
+				3EFDDE19D49C5EA66727E41D9FF4A8F7 /* QRCameraSwitchButton.m */,
+				0A48C246A65CC40A492AC8094199D955 /* QRCodeReader.h */,
+				28C1D5AC515E8DFE877FE3B39C2E1578 /* QRCodeReader.m */,
+				371E06763D333063B8761AFBFBB3EDA3 /* QRCodeReaderDelegate.h */,
+				41F21DD7A5F91B3E68F9D77D6BAD9FDE /* QRCodeReaderView.h */,
+				D493C3E76670FAA1F9DA383F1EFAD05C /* QRCodeReaderView.m */,
+				9603B129B0961C9B4987AD0F068C46C1 /* QRCodeReaderViewController.h */,
+				BF4B6F4C3552805F5A20D5359B177061 /* QRCodeReaderViewController.m */,
+				865DE41BCA976771B187826455B7A549 /* QRToggleTorchButton.h */,
+				B6BB5F25D526225E2CFAD368C8293200 /* QRToggleTorchButton.m */,
+				DCDED4943D1F32351522FE2901233B5F /* Support Files */,
+			);
+			path = QRCodeReaderViewController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
+				A72F74F44200B11415778AD74957013F /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				481D786FDEC6852C5BF00A63BE34E171 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DF674EF74DEA4F8908B1ECB61B71CCD /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				785BA441EFA82A1AD3342EB8F6683507 /* AFNetworking.h */,
+				A4E271BBF5ED173349B5EC858F49EAC9 /* NSURLConnection */,
+				B6881A429B9D800CEE5D74AF518242EB /* NSURLSession */,
+				F9A7EF12D32E964281FC8082BBF5A72C /* Reachability */,
+				227721DBF09ADAF71FB8B764B24C30B7 /* Security */,
+				6781F76172B596C15812E244431C7B24 /* Serialization */,
+				368C70E5335413E84871C5A2FE64BF71 /* Support Files */,
+				FD3A64CF7EFD7E91AB162C3081D9D938 /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A4E271BBF5ED173349B5EC858F49EAC9 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC9A4B294E6BD6CD4C41793E981CC8 /* AFHTTPRequestOperation.h */,
+				3CC0329BDD9EEFB7AD9952346617D4CC /* AFHTTPRequestOperation.m */,
+				4D83C832E49FE9167D29BC5C8DF2D76F /* AFHTTPRequestOperationManager.h */,
+				1CBCC9547CF7AC7D53CDC0971688EE77 /* AFHTTPRequestOperationManager.m */,
+				90CD867C88668D3B1B2A77EBFCA90094 /* AFURLConnectionOperation.h */,
+				BCB0D29344C7FA3844D42B1AEE130B96 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		A72F74F44200B11415778AD74957013F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DF674EF74DEA4F8908B1ECB61B71CCD /* AFNetworking */,
+				636EE8447938353706BFA75677BAAB5B /* AFNetworking-Synchronous */,
+				F9F3298B5C45EC00ABDBC654B69C5E27 /* FCUUID */,
+				6AF355FA774032203BC4D5C13FB1C87C /* QRCodeReaderViewController */,
+				D8CCF1541A0799D09AF7393047AC6294 /* UICKeyChainStore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6881A429B9D800CEE5D74AF518242EB /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				6F3BF88CA7AADC9B6874498CB78175B5 /* AFHTTPSessionManager.h */,
+				4760883E3CA041ABCA3CF391B6B9470E /* AFHTTPSessionManager.m */,
+				11D69454052D5A5D722A92A28884B0CA /* AFURLSessionManager.h */,
+				63E2187BA2D091C62FC2A276FD7DFB46 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FB1D4A03C67F73AD23B3772DD0F559 /* libAFNetworking.a */,
+				D7A86C69E6B55EA57037D943E567B48E /* libAFNetworking-Synchronous.a */,
+				0A0E5EED48D97B326B311FF4C8BA394A /* libFCUUID.a */,
+				25D5DBB03264DDCFF072F01128BEE836 /* libPods-Auth.a */,
+				DF8D5D627EC6DF4F3CA009A47055E80E /* libQRCodeReaderViewController.a */,
+				BA2B5AF5A76568FA388CFB5ADCE6F17B /* libUICKeyChainStore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8CCF1541A0799D09AF7393047AC6294 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B7D597417F85D6E00B81EA94D849E /* UICKeyChainStore.h */,
+				98F870A6EDBF2355A4CC3B2B04F1A4AB /* UICKeyChainStore.m */,
+				EC9C34B178DC36560AC76E4F0AE0134D /* Support Files */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		DCDED4943D1F32351522FE2901233B5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F94069DCA2F589023081CA25A55F6 /* QRCodeReaderViewController.xcconfig */,
+				631377CC56F967C4CC44B9DADE06668F /* QRCodeReaderViewController-Private.xcconfig */,
+				777C4299ABAED760777CE6CE734B44E6 /* QRCodeReaderViewController-dummy.m */,
+				CEB5360E5177023177C962A5F025494F /* QRCodeReaderViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QRCodeReaderViewController";
+			sourceTree = "<group>";
+		};
+		EC9C34B178DC36560AC76E4F0AE0134D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91DDFB02A54237F75E0E30CA1624478F /* UICKeyChainStore.xcconfig */,
+				1700BE038B4B7CC82DF79A9D1422FF60 /* UICKeyChainStore-Private.xcconfig */,
+				DB1C02FAEC252F81812F3E98DBA4DD06 /* UICKeyChainStore-dummy.m */,
+				C09BB2F25ABFDC9F80B30E46BE144588 /* UICKeyChainStore-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICKeyChainStore";
+			sourceTree = "<group>";
+		};
+		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D9B4A2390DC3835E4483708711D6170 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F68DB6CE7658B577B7D5E35D03D580B9 /* 2.x */ = {
+			isa = PBXGroup;
+			children = (
+				32B39F652A96F1B18CB3069A1B627742 /* AFHTTPRequestOperationManager+Synchronous.h */,
+				7033372D154C22F88FCCB1FA6D72197A /* AFHTTPRequestOperationManager+Synchronous.m */,
+			);
+			name = 2.x;
+			sourceTree = "<group>";
+		};
+		F9A7EF12D32E964281FC8082BBF5A72C /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1E8BBFE28D6278B2EE8DB876BAA3A90E /* AFNetworkReachabilityManager.h */,
+				4327CAC6E1981A2F2E81589EE23FBB59 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		F9F3298B5C45EC00ABDBC654B69C5E27 /* FCUUID */ = {
+			isa = PBXGroup;
+			children = (
+				031DEC76D29E770A293133C9916CDBE5 /* FCUUID.h */,
+				39234D74BCE74FCEF80515475C5BA794 /* FCUUID.m */,
+				51460E3A45D8FAA70A3B2DB81DC9B8FA /* Support Files */,
+			);
+			path = FCUUID;
+			sourceTree = "<group>";
+		};
+		FD3A64CF7EFD7E91AB162C3081D9D938 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FB230230044BA3D470EDB1F5BCB14FC8 /* AFNetworkActivityIndicatorManager.h */,
+				FA909720381CE51487679766C9F89D09 /* AFNetworkActivityIndicatorManager.m */,
+				3E3FB731B2CF2FCE06E6C9E3A97AF8A9 /* UIActivityIndicatorView+AFNetworking.h */,
+				BB460B50C6AEDAEA64926E0E7CE69185 /* UIActivityIndicatorView+AFNetworking.m */,
+				DEE70D2E94F7907BE49CAB7BCAD12F96 /* UIAlertView+AFNetworking.h */,
+				73CF9588901EA2BAA41BDC175BCB2EF7 /* UIAlertView+AFNetworking.m */,
+				EDE97255ED0780D03F92B97B5C7526BF /* UIButton+AFNetworking.h */,
+				6BFF0B647F6041296A4048F06CAF9F92 /* UIButton+AFNetworking.m */,
+				6626BBD7721AB766E2367CA3DB3C35FB /* UIImage+AFNetworking.h */,
+				1120A2BA7BFFB178EE885421E9380720 /* UIImageView+AFNetworking.h */,
+				B6DC4E851538A64DCC8206023B545F4F /* UIImageView+AFNetworking.m */,
+				D6FB75D3C8B1C1BF37794A53DE53AC74 /* UIKit+AFNetworking.h */,
+				86201E4DC84CB0EDF9B8C3B341E96AA5 /* UIProgressView+AFNetworking.h */,
+				DE63169CA7ABB1FEEEF6BFDFC66DBC3D /* UIProgressView+AFNetworking.m */,
+				431F8B7CBA0882C9F3A10B1CFCBB7566 /* UIRefreshControl+AFNetworking.h */,
+				1AA4822B315517ADF7B2483270630B9A /* UIRefreshControl+AFNetworking.m */,
+				487519D4F0B91D0E59EB1AE16999008A /* UIWebView+AFNetworking.h */,
+				458B8D45F2545B76FD6CC42AD69A8344 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44CFB0C34D0A472CA4C178C5E961A090 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9EDBE46CB639E50BD32EAC08EAE719 /* QRCameraSwitchButton.h in Headers */,
+				3F99ED25D1F3A6AFF0B46EDC1C3A4CC8 /* QRCodeReader.h in Headers */,
+				2530432D4883E5EEEB643FA0631643F6 /* QRCodeReaderDelegate.h in Headers */,
+				626E9D4FCFAE76C62EB59DED72481156 /* QRCodeReaderView.h in Headers */,
+				ED13D631EF0F3036C6B74B6729D71297 /* QRCodeReaderViewController.h in Headers */,
+				81AAEC456E5312B3D46F35071F34F283 /* QRToggleTorchButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A685CC89E488EAC9308557D69D09D87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE16F862875207B1FF9D11559ED4392D /* AFHTTPRequestOperationManager+Synchronous.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E17401ED96B8BE031458FA7280892C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688F6334EB24AD1913B1125696670ED8 /* FCUUID.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD30610647331DC895D424B1E8C1A32B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985D0899D08627D35421054D69024E6D /* UICKeyChainStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF60E5BC37FF1339BB3178F83CC8964B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82039DF0259035F8B418DEE9C31EAB5 /* AFHTTPRequestOperation.h in Headers */,
+				227DE6F6FF277607189A490DBA5E41FD /* AFHTTPRequestOperationManager.h in Headers */,
+				38BB6A039E7D9C2B3E54870D16E2D61B /* AFHTTPSessionManager.h in Headers */,
+				418E11320418B93CCA57F30F5A160FE7 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				A99F87BC7C5D1D9EB23ABC36C0B9C14D /* AFNetworkReachabilityManager.h in Headers */,
+				508ED98B4C490D717156CAD310A5EF4E /* AFNetworking.h in Headers */,
+				CCB898F4FA4080C4A89F29FC375E6A88 /* AFSecurityPolicy.h in Headers */,
+				588F7B740DCBE670C5441CA97FE42DA0 /* AFURLConnectionOperation.h in Headers */,
+				C1FE7F0930A5C05BE4ECF600090059C7 /* AFURLRequestSerialization.h in Headers */,
+				30A108B101E826D100DC9F5851D0306E /* AFURLResponseSerialization.h in Headers */,
+				1E93B85CE20183759A75D32E2BCDB04F /* AFURLSessionManager.h in Headers */,
+				74B7DFFBE3C095E62343E6A7DEDDAE7B /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				685C8FB58EB9BF7B3B6A0F9AFBB42613 /* UIAlertView+AFNetworking.h in Headers */,
+				1490BD851992D6C035825FE5B4AB0A1E /* UIButton+AFNetworking.h in Headers */,
+				8EB6CA74AF13A82D492DC222393C6440 /* UIImage+AFNetworking.h in Headers */,
+				D422EF663A9F287DFC00AD75F23597B4 /* UIImageView+AFNetworking.h in Headers */,
+				E2EE66410DD4D77A3F5AA35B05F608FA /* UIKit+AFNetworking.h in Headers */,
+				BF9281DFA035D3B9C541E3CFAAC72D48 /* UIProgressView+AFNetworking.h in Headers */,
+				6FD39BFAB02A240F5044711C05719B0C /* UIRefreshControl+AFNetworking.h in Headers */,
+				66E9BBA9927A3699986A85202B95D715 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34558AF77F7B398E1BC5914C1F6D6DFB /* FCUUID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28BB0A74760672156F128D48CD9328D1 /* Build configuration list for PBXNativeTarget "FCUUID" */;
+			buildPhases = (
+				E478CBEF23996913CDC956B4BDFB6A96 /* Sources */,
+				F0FB2ABAE210712C22FA1D492E305C5B /* Frameworks */,
+				B0E17401ED96B8BE031458FA7280892C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3067CB1920473469DE8C5AB35EF87AC /* PBXTargetDependency */,
+			);
+			name = FCUUID;
+			productName = FCUUID;
+			productReference = 0A0E5EED48D97B326B311FF4C8BA394A /* libFCUUID.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C86CDCFBDD7B951618F544A8E2CC0D2 /* UICKeyChainStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DBB746A61DB45EF852069E5C087F6D4 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
+			buildPhases = (
+				C624679B1118B025254456469EAE7354 /* Sources */,
+				F1E525309F381999D616218F4DE51914 /* Frameworks */,
+				BD30610647331DC895D424B1E8C1A32B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICKeyChainStore;
+			productName = UICKeyChainStore;
+			productReference = BA2B5AF5A76568FA388CFB5ADCE6F17B /* libUICKeyChainStore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		58ABFF666D73D764F423A61421835FAB /* Pods-Auth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B8633DCE6E1F8E06F4898F1C5BF5FF7 /* Build configuration list for PBXNativeTarget "Pods-Auth" */;
+			buildPhases = (
+				8E12A77807AC540E3D33D73AEEFAD62F /* Sources */,
+				8641C501A661B45E007E5FD244976299 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF486C1F1033DBB553EC52B73B49D20 /* PBXTargetDependency */,
+				EB23CD8D07A0E10FA4463E484C4065C7 /* PBXTargetDependency */,
+				A00180CD5ECAAAB780B3E872C35A3B4B /* PBXTargetDependency */,
+				DC64DA208CF5775757DA8D8922921D34 /* PBXTargetDependency */,
+				2AEA86E128DA4395C0C68ED7870F86EA /* PBXTargetDependency */,
+			);
+			name = "Pods-Auth";
+			productName = "Pods-Auth";
+			productReference = 25D5DBB03264DDCFF072F01128BEE836 /* libPods-Auth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A612FA2910317246AABB109C35B5EA33 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA7598E34625A46925AC5FA28931A5A /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				9F0C06C10309EA2FF34F117A2AAFAD6E /* Sources */,
+				DF3A1A7E79CD4693BAA9E3D1C27C514E /* Frameworks */,
+				EF60E5BC37FF1339BB3178F83CC8964B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 79FB1D4A03C67F73AD23B3772DD0F559 /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B3E2944BE4908340EB642D9A00C8071C /* AFNetworking-Synchronous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0294EE845A397CFB21F338779F4D62F9 /* Build configuration list for PBXNativeTarget "AFNetworking-Synchronous" */;
+			buildPhases = (
+				1558547CFA464474C869A850F32496C5 /* Sources */,
+				0153F3B620514898243155000BE968FD /* Frameworks */,
+				8A685CC89E488EAC9308557D69D09D87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7998F730D5AA2A78C4F5268E1C537316 /* PBXTargetDependency */,
+			);
+			name = "AFNetworking-Synchronous";
+			productName = "AFNetworking-Synchronous";
+			productReference = D7A86C69E6B55EA57037D943E567B48E /* libAFNetworking-Synchronous.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCE8E1670678A8C5DB0675A000F12096 /* QRCodeReaderViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D42C1A781490662BA0ADE27E58B76521 /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */;
+			buildPhases = (
+				F65DDF00AFDADA9AC683B3E05106DC9F /* Sources */,
+				8DE1A44FF7DD8B47BC20596C0B1CFFE7 /* Frameworks */,
+				44CFB0C34D0A472CA4C178C5E961A090 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCodeReaderViewController;
+			productName = QRCodeReaderViewController;
+			productReference = DF8D5D627EC6DF4F3CA009A47055E80E /* libQRCodeReaderViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A612FA2910317246AABB109C35B5EA33 /* AFNetworking */,
+				B3E2944BE4908340EB642D9A00C8071C /* AFNetworking-Synchronous */,
+				34558AF77F7B398E1BC5914C1F6D6DFB /* FCUUID */,
+				58ABFF666D73D764F423A61421835FAB /* Pods-Auth */,
+				FCE8E1670678A8C5DB0675A000F12096 /* QRCodeReaderViewController */,
+				4C86CDCFBDD7B951618F544A8E2CC0D2 /* UICKeyChainStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1558547CFA464474C869A850F32496C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFCDC0FF21BA4A8D6E49E22C0E955A3 /* AFHTTPRequestOperationManager+Synchronous.m in Sources */,
+				8DAD2E5B5AC8C49E749989C0A9431CBE /* AFNetworking-Synchronous-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E12A77807AC540E3D33D73AEEFAD62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466AECD05B5DC95EEBD5E15E0D657C32 /* Pods-Auth-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F0C06C10309EA2FF34F117A2AAFAD6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F643CA0B8307417ED466FE2190035440 /* AFHTTPRequestOperation.m in Sources */,
+				65A24850C26A7207B5D59AB33A8E6FAB /* AFHTTPRequestOperationManager.m in Sources */,
+				8BF79BB0BDF7C3806232014A07FA40DC /* AFHTTPSessionManager.m in Sources */,
+				FF24CD0FC7EE8B347B2A0356B91C6BF0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				902EDD20F2254A372EBF57FE71E6A935 /* AFNetworkReachabilityManager.m in Sources */,
+				E6B2FE87B3068A54B4AA6B47C83DCF39 /* AFNetworking-dummy.m in Sources */,
+				323979DF99E43AD1AB6D57EBF81574C0 /* AFSecurityPolicy.m in Sources */,
+				2387246065A368BBF48919FDC5CDFE9C /* AFURLConnectionOperation.m in Sources */,
+				7003AA8CF93750B7A2612DCF6BC67345 /* AFURLRequestSerialization.m in Sources */,
+				77777B340D13BBA98E168994053B8B8C /* AFURLResponseSerialization.m in Sources */,
+				50221716FD30DBDDFEC7FD366DA5B35C /* AFURLSessionManager.m in Sources */,
+				9D053B1B4618447798A39F0C1CC92CF9 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				3D8FDC5C812E2B31AC13501629B69D1D /* UIAlertView+AFNetworking.m in Sources */,
+				73E69CD7083C88FA57530612F9F6067C /* UIButton+AFNetworking.m in Sources */,
+				0CCEF329FB3708795E57A411AE2C1085 /* UIImageView+AFNetworking.m in Sources */,
+				511C696B5E0BF2113DD0ADBC56DBF0DE /* UIProgressView+AFNetworking.m in Sources */,
+				719016631D2CF6B03585D2DF2AEAF37A /* UIRefreshControl+AFNetworking.m in Sources */,
+				C6AB31B45E4FCD94A012962CE90DF4D3 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C624679B1118B025254456469EAE7354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635A2DE11F1EE180FDA811CE53B726C8 /* UICKeyChainStore-dummy.m in Sources */,
+				F80373F1D42BFD3DF37F4815FB3ECC2D /* UICKeyChainStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E478CBEF23996913CDC956B4BDFB6A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F63E5C85E2401FA075AC4846D5D216 /* FCUUID-dummy.m in Sources */,
+				404AC5D895FF0025E63CEBC81C29768E /* FCUUID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65DDF00AFDADA9AC683B3E05106DC9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB64EB2FA71A39840735FFDB08D8CC8E /* QRCameraSwitchButton.m in Sources */,
+				DB8CE3CA687753EC29091D5A72769748 /* QRCodeReader.m in Sources */,
+				587921E28F8DFCE37F78345837D0CD7F /* QRCodeReaderView.m in Sources */,
+				F5608D3183B6CDC122DAAD5435C77CE8 /* QRCodeReaderViewController-dummy.m in Sources */,
+				8A87456B99E7DAA5F84F3EC7E7AF6230 /* QRCodeReaderViewController.m in Sources */,
+				1BFF8288283FE860AA0AF064D1576CA9 /* QRToggleTorchButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AEA86E128DA4395C0C68ED7870F86EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 4C86CDCFBDD7B951618F544A8E2CC0D2 /* UICKeyChainStore */;
+			targetProxy = 96ACF747F38BC1ED78CC26D248C2A36B /* PBXContainerItemProxy */;
+		};
+		7998F730D5AA2A78C4F5268E1C537316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = A612FA2910317246AABB109C35B5EA33 /* AFNetworking */;
+			targetProxy = 8251156D7A71D7415BC6FD44DB707F77 /* PBXContainerItemProxy */;
+		};
+		A00180CD5ECAAAB780B3E872C35A3B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FCUUID;
+			target = 34558AF77F7B398E1BC5914C1F6D6DFB /* FCUUID */;
+			targetProxy = EBFE38463EC7E945AC064617E662E4EB /* PBXContainerItemProxy */;
+		};
+		C3067CB1920473469DE8C5AB35EF87AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 4C86CDCFBDD7B951618F544A8E2CC0D2 /* UICKeyChainStore */;
+			targetProxy = 6287B1AA1FA070C52373BFED576DAF43 /* PBXContainerItemProxy */;
+		};
+		DC64DA208CF5775757DA8D8922921D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCodeReaderViewController;
+			target = FCE8E1670678A8C5DB0675A000F12096 /* QRCodeReaderViewController */;
+			targetProxy = 0F7354959CECB094605D9F194CC1622C /* PBXContainerItemProxy */;
+		};
+		EB23CD8D07A0E10FA4463E484C4065C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AFNetworking-Synchronous";
+			target = B3E2944BE4908340EB642D9A00C8071C /* AFNetworking-Synchronous */;
+			targetProxy = C7A56D4902A974D244BA4B1A2AC8676F /* PBXContainerItemProxy */;
+		};
+		FBF486C1F1033DBB553EC52B73B49D20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = A612FA2910317246AABB109C35B5EA33 /* AFNetworking */;
+			targetProxy = 6183F59A4461E9B5A80B440317924D8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0297DDA9448B6C00B828972E517F8413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1700BE038B4B7CC82DF79A9D1422FF60 /* UICKeyChainStore-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		162FE5F9058017761254E78526A3D816 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209CF3C8F21D64193611AA242DAF5038 /* FCUUID-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FCUUID/FCUUID-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A87044ED1418529C9F0CBF7B6F5E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631377CC56F967C4CC44B9DADE06668F /* QRCodeReaderViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4B0C76A7045EE92EFADCB9B93C784DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE0EAAC0B6C53FE4BFE58E8637688B3 /* AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		754BD1422F25F147270EBC8226137F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DF6E581F4F2083D313CFA0D5DD7681 /* Pods-Auth.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		80F72454F1715D9BBAB21887962855CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0928D1D1F3D6D4D3CC4B042BC52B73 /* Pods-Auth.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		964882D2F632EABFED055160D2CFB361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE0EAAC0B6C53FE4BFE58E8637688B3 /* AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C475020F67A9C5AB4DC119397B4A345F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209CF3C8F21D64193611AA242DAF5038 /* FCUUID-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FCUUID/FCUUID-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5C64CC91173B2287BBDC856942F1838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B23371E693E85A45BB0C7E45BB28F10 /* AFNetworking-Synchronous-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking-Synchronous/AFNetworking-Synchronous-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E34BF3907BA6073168C2D565E5228B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631377CC56F967C4CC44B9DADE06668F /* QRCodeReaderViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E92EBD8CBD9062F54938667060FAF42C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1700BE038B4B7CC82DF79A9D1422FF60 /* UICKeyChainStore-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FCEA61F1D1EBB593EF85BB793D4AB3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B23371E693E85A45BB0C7E45BB28F10 /* AFNetworking-Synchronous-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking-Synchronous/AFNetworking-Synchronous-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0294EE845A397CFB21F338779F4D62F9 /* Build configuration list for PBXNativeTarget "AFNetworking-Synchronous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C64CC91173B2287BBDC856942F1838 /* Debug */,
+				FCEA61F1D1EBB593EF85BB793D4AB3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DBB746A61DB45EF852069E5C087F6D4 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92EBD8CBD9062F54938667060FAF42C /* Debug */,
+				0297DDA9448B6C00B828972E517F8413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28BB0A74760672156F128D48CD9328D1 /* Build configuration list for PBXNativeTarget "FCUUID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162FE5F9058017761254E78526A3D816 /* Debug */,
+				C475020F67A9C5AB4DC119397B4A345F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B8633DCE6E1F8E06F4898F1C5BF5FF7 /* Build configuration list for PBXNativeTarget "Pods-Auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F72454F1715D9BBAB21887962855CE /* Debug */,
+				754BD1422F25F147270EBC8226137F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA7598E34625A46925AC5FA28931A5A /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B0C76A7045EE92EFADCB9B93C784DDE /* Debug */,
+				964882D2F632EABFED055160D2CFB361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D42C1A781490662BA0ADE27E58B76521 /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A87044ED1418529C9F0CBF7B6F5E082 /* Debug */,
+				E34BF3907BA6073168C2D565E5228B63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

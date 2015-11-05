@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'Auth' do
+pod 'QRCodeReaderViewController', '~> 4.0.0'
+pod 'FCUUID'
+pod 'AFNetworking'
+pod 'AFNetworking-Synchronous/2.x'
+
+end
+
+target 'AuthTests' do
+
+end
+
+target 'AuthUITests' do
+
+end
+
