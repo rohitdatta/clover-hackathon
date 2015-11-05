@@ -1,6 +1,7 @@
 from apns import APNs, Frame, Payload
+import time
 
-def send_notification(push_key):
+def send_notification(token_hex):
 	apns = APNs(use_sandbox=True, cert_file='auth_cert.pem', key_file='auth_key.pem')
 
 	
