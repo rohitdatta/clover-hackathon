@@ -6,9 +6,7 @@ home = Blueprint('home', __name__, url_prefix='')
 
 @home.route('/')
 def home_page():
-	if session.get('username'):
-		return render_template("login.html")
-	return render_template("register.html")
+	return render_template("index.html")
 
 
 @home.route('/logged_in', methods=['GET'])

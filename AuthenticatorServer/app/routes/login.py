@@ -1,4 +1,4 @@
-from flask import Blueprint, Response, request, session, url_for, redirect
+from flask import Blueprint, Response, request, session, url_for, redirect, render_template
 import os, string, time
 from app import redis_store
 from app.notification import send_notification
@@ -6,6 +6,12 @@ from app import app
 import random
 
 login = Blueprint('login', __name__, url_prefix='/login')
+
+@login.route('')
+def login_page():
+	if session.get('username'):
+		return render_template("login.html")
+	return render_template("register.html")
 
 @login.route('/get_code')
 def get_code():
