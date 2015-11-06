@@ -51,7 +51,7 @@
         var checks = 0;
         var getQR = function() {
             $("#qrcode").empty();
-            $.get("http://localhost:5000/login/get_code", function(data) {
+            $.get("http://10.0.1.223:5000/login/get_code", function(data) {
                 new QRCode(document.getElementById("qrcode"), data);
                 getCode = data;
                 setTimeout(check_code, 1500);
@@ -64,7 +64,7 @@
         var check_code = function() {
                 var code = getCode;
                 checks += 1;
-                $.post("http://localhost:5000/login/get_cookie", {
+                $.post("http://10.0.1.223:5000/login/get_cookie", {
                     'one_time_code': code
                 }, function(data) {
                     if (data == "successful login") {
