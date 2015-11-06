@@ -32,9 +32,9 @@
                 </div>
                 <div class="col-xs-2">
                   {% if session.get("logged_in") %}
-                      <button type="submit" class="btn btn-success">Log Out</button>
+                      <a href="/logout"><button type="submit" class="btn btn-success">Log Out</button></a>
                   {% else %}
-                      <button type="submit" class="btn btn-success">Log In</button>
+                      <a href="/login"><button type="submit" class="btn btn-success">Log In</button></a>
                   {% endif %}
                 </div>
           </div>

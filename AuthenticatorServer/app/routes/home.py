@@ -16,5 +16,6 @@ def is_logged_in():
 
 @home.route('/logout', methods=['GET'])
 def clear_db():
-	redis_store.flushall()
+	session['username'] = None
+	session['logged_in'] = None
 	return render_template("register.html")
