@@ -10,7 +10,7 @@ login = Blueprint('login', __name__, url_prefix='/login')
 def get_code():
 	username = session.get("username")
 	if username:
-		if not redis_store.hget(username+":pinged"):
+		if not redis_store.get(username+":pinged"):
 			token_hex = redis_store.hmget(username, "push_key")
 			send_notification(token_hex)
 			redis_store.setex(username+":pinged", True, 300)
@@ -20,7 +20,7 @@ def get_code():
 	if username:
 		redis_store.setex(username+":temp_key", str(code), 30)
 	else:
-		redis_store.setex(code, True, 30)
+		redis_store.setex(code, False, 30)
 
 	return str(code)
 
@@ -39,7 +39,7 @@ def register():
 		print("KEY: {} ONE_TIME_CODE: {}".format(key, one_time_code))
 		return "INCORRECT ONE TIME CODE"
 	redis_store.hmset(username, {"uuid": uuid, "push_key":push_key})
-	redis_store.setex(one_time_code, username, 30)
+	redis_store.setex(one_time_code, username, 60)
 
 	return "Great success!"
 
@@ -70,7 +70,7 @@ def authenticate():
 def get_cookie():
 	one_time_code = request.form.get('one_time_code')
 	valid = redis_store.get(one_time_code)
-	if valid:
+	if valid and redis_store.hget(valid, "uuid"):
 		session["logged_in"] = True
 		session["username"] = valid
 		#redis_store.set(username+":logged_in", True)
