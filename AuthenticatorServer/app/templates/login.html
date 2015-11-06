@@ -12,10 +12,7 @@
                 <div id="qrcode"></div>
             </center>
         </div>
-        ​ ​
-        <footer class="footer">
-            <p>Jeffrey, Jose, Michelle, Rohit, Sam</p>
-        </footer>
+
         ​
     </div>
     <!-- /container -->
@@ -42,7 +39,6 @@
                     'one_time_code': code
                 }, function(data) {
                     if (data == "successful login") {
-                        alert(data);
                         location.href = "http://localhost:5000/logged_in";
                     } else {
                         if (checks < 28)

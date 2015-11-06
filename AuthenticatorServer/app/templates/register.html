@@ -35,7 +35,6 @@
                     'one_time_code': code
                 }, function(data) {
                     if (data == "successful login") {
-                        alert(data);
                         location.href = "http://localhost:5000/logged_in";
                     } else {
                         if (checks < 8)
