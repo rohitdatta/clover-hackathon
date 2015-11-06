@@ -7,13 +7,10 @@
             <h1 class="text-center">Hello {{session.get("username")}}</h1>
         {% else %}
              <h1 class="text-center">Error</h1>
-             <p class="text-center"> Please log in to continue </p>
+             <p class="text-center"> Please log in to continue. </p>
+            <p class="text-center"><a class="btn btn-lg btn-success" href="/login" role="button">Login</a>
         {% endif %}
         </div>
-
-        
-        ​ ​
-
         ​
     </div>
 {% endblock content %}
