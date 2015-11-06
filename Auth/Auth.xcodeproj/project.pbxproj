@@ -20,6 +20,10 @@
 		821EB8C21BEBF9E200601BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821EB8C01BEBF9E200601BCB /* LaunchScreen.storyboard */; };
 		821EB8CD1BEBF9E300601BCB /* AuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 821EB8CC1BEBF9E300601BCB /* AuthTests.m */; };
 		821EB8D81BEBF9E300601BCB /* AuthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 821EB8D71BEBF9E300601BCB /* AuthUITests.m */; };
+		826265E11BEC31FC00E9106A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 826265E01BEC31FC00E9106A /* User.m */; settings = {ASSET_TAGS = (); }; };
+		826265E41BEC329500E9106A /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826265E31BEC329500E9106A /* SignupViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8263E72B1BED3089003B6979 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8263E72A1BED3089003B6979 /* NavViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8263E72D1BED4AAE003B6979 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8263E72C1BED4AAE003B6979 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,13 @@
 		821EB8D31BEBF9E300601BCB /* AuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		821EB8D71BEBF9E300601BCB /* AuthUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthUITests.m; sourceTree = "<group>"; };
 		821EB8D91BEBF9E300601BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826265DF1BEC31FC00E9106A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		826265E01BEC31FC00E9106A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		826265E21BEC329500E9106A /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		826265E31BEC329500E9106A /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		8263E7291BED3089003B6979 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		8263E72A1BED3089003B6979 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		8263E72C1BED4AAE003B6979 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		86E85848044801516BDA5D1E /* Pods-Auth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.release.xcconfig"; sourceTree = "<group>"; };
 		C84C77F6CF807B9CDE89E2BB /* Pods-Auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auth/Pods-Auth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8263E72D1BED4AAE003B6979 /* AudioToolbox.framework in Frameworks */,
 				2A5E1829657E6262A3091278 /* libPods-Auth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +119,7 @@
 		6B38C356F9C4FFA56EFA659C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8263E72C1BED4AAE003B6979 /* AudioToolbox.framework */,
 				36BD965197DEC709E2E234E7 /* libPods-Auth.a */,
 			);
 			name = Frameworks;
@@ -144,8 +157,12 @@
 				821EB8B81BEBF9E200601BCB /* ViewController.h */,
 				821EB8B91BEBF9E200601BCB /* ViewController.m */,
 				821EB8BB1BEBF9E200601BCB /* Main.storyboard */,
+				8263E7291BED3089003B6979 /* NavViewController.h */,
+				8263E72A1BED3089003B6979 /* NavViewController.m */,
 				821B56BF1BEBFB4B00D1B194 /* HomeViewController.h */,
 				821B56C01BEBFB4B00D1B194 /* HomeViewController.m */,
+				826265E21BEC329500E9106A /* SignupViewController.h */,
+				826265E31BEC329500E9106A /* SignupViewController.m */,
 				821B56C51BEC064C00D1B194 /* AuthAPI.h */,
 				821B56C61BEC064C00D1B194 /* AuthAPI.m */,
 				821B56C21BEBFD0E00D1B194 /* ScannerViewController.h */,
@@ -154,6 +171,8 @@
 				821EB8C01BEBF9E200601BCB /* LaunchScreen.storyboard */,
 				821EB8C31BEBF9E200601BCB /* Info.plist */,
 				821EB8B21BEBF9E200601BCB /* Supporting Files */,
+				826265DF1BEC31FC00E9106A /* User.h */,
+				826265E01BEC31FC00E9106A /* User.m */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -355,8 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826265E11BEC31FC00E9106A /* User.m in Sources */,
 				821EB8BA1BEBF9E200601BCB /* ViewController.m in Sources */,
 				821B56CA1BEC0B8C00D1B194 /* AuthScanner.m in Sources */,
+				826265E41BEC329500E9106A /* SignupViewController.m in Sources */,
+				8263E72B1BED3089003B6979 /* NavViewController.m in Sources */,
 				821EB8B71BEBF9E200601BCB /* AppDelegate.m in Sources */,
 				821B56C71BEC064C00D1B194 /* AuthAPI.m in Sources */,
 				821EB8B41BEBF9E200601BCB /* main.m in Sources */,

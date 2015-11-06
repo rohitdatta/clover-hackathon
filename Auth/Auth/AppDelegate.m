@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "AuthScanner.h"
+#import "User.h"
+#import "HomeViewController.h"
+#import "SignupViewController.h"
+#import "NavViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -28,12 +33,30 @@
     }else {
         [application registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound)];
     }
+    
+    RLMResults *users = [User allObjects];
+    
+    if (users.count > 0) {
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        NavViewController *ivc = [storyboard instantiateViewControllerWithIdentifier:@"Nav"];
+        self.window.rootViewController = ivc;
+        NSLog(@"%@", ivc);
+        
+    }else {
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        SignupViewController *ivc = [storyboard instantiateViewControllerWithIdentifier:@"SignupViewController"];
+        self.window.rootViewController = ivc;
+        
+    }
+    
     return YES;
 }
 
 -(void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
-    // Prepare the Device Token for Registration (remove spaces and < >)
+
     NSString *devToken = [[[[deviceToken description]
                             stringByReplacingOccurrencesOfString:@"<"withString:@""]
                            stringByReplacingOccurrencesOfString:@">" withString:@""]
@@ -57,6 +80,13 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     [AuthScanner validateFingerFromPush:userInfo];
+    if (application.applicationState == UIApplicationStateInactive || application.applicationState == UIApplicationStateBackground) {
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"didReceiveRemoteNotification"];
+        [[NSUserDefaults standardUserDefaults] setObject:userInfo forKey:@"notificationData"];
+        [NSUserDefaults standardUserDefaults];
+    
+    }
 }
 -(void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
 

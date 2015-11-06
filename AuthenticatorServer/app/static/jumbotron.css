@@ -4,8 +4,14 @@ body {
   padding-bottom: 20px;
 }
 
-.logout {
-    cursor: pointer;
-    text-decoration: underline;
-    
-  }
+.logbutton {
+	margin-top: 8px;
+}
+
+h1 {
+	padding: 10px;
+}
+
+p {
+	padding: 10px;
+}
