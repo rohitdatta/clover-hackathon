@@ -1,5 +1,6 @@
 {% extends 'layouts/base.html' %}
   ​{% block content %}
+  {% set active_page = 'portal' %}
         ​
         <div class="jumbotron">
         {% if session.get("logged_in") and session.get("username") %}
