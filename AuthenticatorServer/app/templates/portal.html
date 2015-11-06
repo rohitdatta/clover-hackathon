@@ -48,7 +48,12 @@
     </nav>
         ​
         <div class="jumbotron">
-            <h1>Hello</h1>
+        {% if session.get("logged_in") and session.get("username") %}
+            <h1>Hello {{session.get("username")}}</h1>
+        {% else %}
+             <h1>Error</h1>
+             <p> Please log in to continue </p>
+        {% endif %}
         </div>
 
         

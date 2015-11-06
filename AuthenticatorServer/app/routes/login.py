@@ -41,14 +41,7 @@ def get_cookie():
 		return "successful login"
 	return "failed"
 
-@login.route('/test', methods=['GET'])
-def is_logged_in():
-	return str(session.get("logged_in") == True)
 
-@login.route('/flush', methods=['GET'])
-def clear_db():
-	redis_store.flushall()
-	return "done"
 
 
 #MOBILE ENDPOINTS
