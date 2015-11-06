@@ -27,23 +27,24 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
             <div class="container">
-                <div class="col-xs-10">
+                
                     <a class="navbar-brand" href="#">Authenticator Project 2B</a>
-                </div>
-                <div class="col-xs-2">
+                
                   {% if session.get("logged_in") %}
-                      <button type="submit" class="btn btn-success">Log Out</button>
+                      <button type="submit" class="btn btn-success logbutton navbar-right">Log Out</button>
                   {% else %}
-                      <button type="submit" class="btn btn-success">Log In</button>
+                      <button type="submit" class="btn btn-success logbutton navbar-right">Log In</button>
                   {% endif %}
-                </div>
+                
           </div>
         </div>
     </nav>
+    
 
 {% block content %}
 
 {% endblock %}
+
 </body>
 
 <footer>
