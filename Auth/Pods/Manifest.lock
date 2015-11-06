@@ -25,19 +25,27 @@ PODS:
   - FCUUID (1.1.4):
     - UICKeyChainStore (~> 1.0.5)
   - QRCodeReaderViewController (4.0.0)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
   - UICKeyChainStore (1.0.5)
+  - UIColor+FlatColors (0.0.2)
 
 DEPENDENCIES:
   - AFNetworking
   - AFNetworking-Synchronous/2.x
   - FCUUID
   - QRCodeReaderViewController (~> 4.0.0)
+  - Realm
+  - UIColor+FlatColors
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   AFNetworking-Synchronous: 29531ad341ec465a4ff9b66dea9cf7272080e12e
   FCUUID: 178c3d7907b1399137f1093f9c04ce4825755292
   QRCodeReaderViewController: 99922d8e8b8aeebe2e9523a373aa807444056ded
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
   UICKeyChainStore: e81dc3b58d56ffaed61ab6669eb97071e53fc377
+  UIColor+FlatColors: 6c699df7a575281794c688c64cee6c44fd1f93b4
 
 COCOAPODS: 0.38.2

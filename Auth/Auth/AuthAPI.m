@@ -33,20 +33,25 @@
         
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         NSError *error = nil;
-        NSDictionary *result = [manager syncPOST:[NSString stringWithFormat:@"https:// /%@", endpoint]
+        NSDictionary *result = [manager syncPOST:[NSString stringWithFormat:@"http://10.0.1.223:5000/%@", endpoint]
                                       parameters:request
                                        operation:NULL
                                            error:&error];
-        return result;
+        if (error){
+            return @{@"error": error};
+        }else {
+            return result;
+        }
         
     }else if ([type isEqualToString:@"GET"]) {
         
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         NSError *error = nil;
-        NSDictionary *result = [manager syncGET:[NSString stringWithFormat:@"https:// /%@", endpoint]
+        NSDictionary *result = [manager syncGET:[NSString stringWithFormat:@"http://10.0.1.223:5000/%@", endpoint]
                                      parameters:request
                                       operation:NULL
                                           error:&error];
+        
         return result;
         
     }else {
