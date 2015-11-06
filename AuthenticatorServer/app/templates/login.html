@@ -69,7 +69,7 @@
                 }, function(data) {
                     if (data == "successful login") {
                         alert(data);
-                        location.href = "http://localhost:5000/login/test";
+                        location.href = "http://localhost:5000/logged_in";
                     } else {
                         if (checks < 28)
                             setTimeout(check_code, 1500);

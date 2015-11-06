@@ -1,2 +1,3 @@
 AuthenticatorServer/env/*
 .DS_Store
+*.pyc
