@@ -67,8 +67,7 @@
                 $.post("http://localhost:5000/login/get_cookie", {
                     'one_time_code': code
                 }, function(data) {
-                    if (data == "True") {
-                        passed = false;
+                    if (data == "successful login") {
                         alert(data);
                         location.href = "http://www.google.com";
                     } else {
