@@ -31,9 +31,9 @@
                     <a class="navbar-brand" href="#">Authenticator Project 2B</a>
                 
                   {% if session.get("logged_in") %}
-                      <button type="submit" class="btn btn-success logbutton navbar-right">Log Out</button>
+                      <a href="/logout"><button type="submit" class="btn btn-success logbutton navbar-right">Log Out</button></a>
                   {% else %}
-                      <button type="submit" class="btn btn-success logbutton navbar-right">Log In</button>
+                      <a href="/login"><button type="submit" class="btn btn-success logbutton navbar-right">Log In</button></a>
                   {% endif %}
                 
           </div>
@@ -47,6 +47,6 @@
 
 </body>
 
-<footer>
-
-</footer>
+        <footer class="footer">
+            <p>Jeffrey, Jose, Michelle, Rohit, Sam</p>
+        </footer>
