@@ -48,9 +48,19 @@
 
     </div> <!-- /container -->
     <script type="text/javascript">
-    $.get("http://localhost:5000/login/get_code", function(data){
+      var code = null;
+      $.get("http://localhost:5000/login/get_code", function(data){
         new QRCode(document.getElementById("qrcode"), data);
+        code = data;
+        alert(data);
       });
+      var check_code = function() {
+        $.post("http://localhost:5000/login/get_cookie", {'one_time_code':code}, function(data){
+            alert(data);
+          });
+      }
+      setTimeout(check_code, 15000);
+      
     </script>
   </body>
 </html>

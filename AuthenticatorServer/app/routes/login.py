@@ -6,22 +6,6 @@ from app import app
 
 login = Blueprint('login', __name__, url_prefix='/login')
 
-def has_no_empty_params(rule):
-    defaults = rule.defaults if rule.defaults is not None else ()
-    arguments = rule.arguments if rule.arguments is not None else ()
-    return len(defaults) >= len(arguments)
-
-@login.route("/site-map")
-def site_map():
-    links = []
-    for rule in app.url_map.iter_rules():
-        # Filter out rules we can't navigate to in a browser
-        # and rules that require parameters
-        if "GET" in rule.methods and has_no_empty_params(rule):
-            url = url_for(rule.endpoint, **(rule.defaults or {}))
-            links.append((url, rule.endpoint))
-    return str(links)
-
 @login.route('/get_code')
 def get_code():
 	username = session.get("username")
@@ -34,9 +18,9 @@ def get_code():
 	code_bytes = os.urandom(128)
 	code = ''.join(map(lambda x: string.ascii_letters[ord(x)%len(string.ascii_letters)], code_bytes))
 	if username:
-		redis_store.setex(username+":temp_key", str(code), 15)
+		redis_store.setex(username+":temp_key", str(code), 30)
 	else:
-		redis_store.setex(code, True, 15)
+		redis_store.setex(code, True, 30)
 
 	return str(code)
 
@@ -50,11 +34,12 @@ def register():
 
 	if not (username and uuid and push_key and one_time_code):
 		return "ERROR - INVALID INFO"
-	key = redis_store.get(username+":temp_key")
-	if key != one_time_code:
+	key = redis_store.get(one_time_code)
+	if not one_time_code:
 		print("KEY: {} ONE_TIME_CODE: {}".format(key, one_time_code))
 		return "INCORRECT ONE TIME CODE"
 	redis_store.hmset(username, {"uuid": uuid, "push_key":push_key})
+	redis_store.setex(one_time_code, username, 30)
 
 	return "Great success!"
 
