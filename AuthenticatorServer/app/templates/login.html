@@ -34,7 +34,6 @@
         ​
         <div class="jumbotron">
             <h1>Register</h1>
-            <p class="lead">Scan QR Code:</p>
             <center>
                 <div id="qrcode"></div>
             </center>
@@ -52,9 +51,10 @@
         var getQR = function() {
             $("#qrcode").empty();
             $.get("http://localhost:5000/login/get_code", function(data) {
-                new QRCode(document.getElementById("qrcode"), data);
+                //new QRCode(document.getElementById("qrcode"), data);
                 getCode = data;
-                setTimeout(check_code, 1500);
+                setTimeout(check_code, 1000);
+                $("#qrcode").replaceWith("<h1>" + data + "</h1>");
             });
         }
 
@@ -71,19 +71,16 @@
                         alert(data);
                         location.href = "http://localhost:5000/login/test";
                     } else {
-                        if (checks < 8)
+                        if (checks < 28)
                             setTimeout(check_code, 1500);
                         else
                         {
                             checks = 0;
-                            setTimeout(getQR, 500);
+                            setTimeout(getQR, 1000);
                         }
                     }
                 });
-
-
             }
-            //var interval = setInterval(check_code, 5000);
     </script>
 </body>
 

@@ -1,4 +1,4 @@
-from flask import Blueprint, Response, request, session, url_for
+from flask import Blueprint, Response, request, session, url_for, redirect
 import os, string, time
 from app import redis_store
 from app.notification import send_notification
@@ -29,11 +29,6 @@ def get_code():
 
 	return str(code)
 
-
-@login.route('/page', methods=['GET', 'POST'])
-def create_login_page():
-	if request.method == 'GET':
-		return "the page"
 
 @login.route('/get_cookie', methods=['POST'])
 def get_cookie():
@@ -70,7 +65,6 @@ def register():
 		return "ERROR - INVALID INFO"
 	key = redis_store.get(one_time_code)
 	if not one_time_code:
-		print("KEY: {} ONE_TIME_CODE: {}".format(key, one_time_code))
 		return "INCORRECT ONE TIME CODE"
 	redis_store.hmset(username, {"uuid": uuid, "push_key":push_key})
 	redis_store.setex(one_time_code, username, 60)
@@ -87,8 +81,6 @@ def authenticate():
 		return "ERROR - INVALID INFO"
 	key = redis_store.get(username+":temp_key")
 	correct_uuid = redis_store.hmget(username, "uuid")[0]
-	print("username: {} uuid: {} one_time_code: {}".format(username, uuid, one_time_code))
-	print("CORRECT uuid: {} key: {}".format(correct_uuid, key))
 	if not(one_time_code and uuid) or uuid != correct_uuid or (key != one_time_code):
 		return "INCORRECT AUTH INFO"
 
