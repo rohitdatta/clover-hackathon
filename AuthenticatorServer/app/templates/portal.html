@@ -4,10 +4,10 @@
         ​
         <div class="jumbotron">
         {% if session.get("logged_in") and session.get("username") %}
-            <h1>Hello {{session.get("username")}}</h1>
+            <h1 class="text-center">Hello {{session.get("username")}}</h1>
         {% else %}
-             <h1>Error</h1>
-             <p> Please log in to continue </p>
+             <h1 class="text-center">Error</h1>
+             <p class="text-center"> Please log in to continue </p>
         {% endif %}
         </div>
 
