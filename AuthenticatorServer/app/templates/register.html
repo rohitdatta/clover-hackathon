@@ -49,20 +49,18 @@
     </div> <!-- /container -->
     <script type="text/javascript">
       var getCode;
-      var getQR = function(){
-        $.get("http://localhost:5000/login/get_code", function(data){
-          new QRCode(document.getElementById("qrcode"), data);
-          getCode = data;
-          alert(data);
-          check_code(getCode);
-        });
+      var getQR = function() {
+        var code = null;
+      $.get("http://localhost:5000/login/get_code", function(data){
+        new QRCode(document.getElementById("qrcode"), data);
+        code = data;
+        alert(data);
+      });
       }
-​
-​
       var passed = true;
       getQR();
-      // $("#qrcode").empty();
-      //test line
+      
+
       var check_code = function(code) {
         if(passed){
           $.post("http://localhost:5000/login/get_cookie", {'one_time_code':code}, function(data){
