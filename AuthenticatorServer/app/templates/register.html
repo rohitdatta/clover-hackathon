@@ -1,35 +1,5 @@
 {% extends 'layouts/base.html' %}
 	​{% block content %}
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">Authenticator Project 2B</a>
-		  {% if session.get("logged_in") %}
-		  <button type="submit" class="btn btn-success">Log Out</button>
-		  {% else %}
-		  <button type="submit" class="btn btn-success">Log In</button>
-		  {% endif %}
-		  </div>
-		  </div>
-
-
-
-<!--     <div class="container">
-		<div class="header clearfix">
-			<h3 class="text-muted">Authenticator Project 2B</h3>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-		  <form class="navbar-form navbar-right">
-			<button type="submit" class="btn btn-success">Log Out</button>
-		  </form>
-		</div><!--/.navbar-collapse -->
-	</nav>
 		​
 		<div class="jumbotron">
 			<h1>Register</h1>
