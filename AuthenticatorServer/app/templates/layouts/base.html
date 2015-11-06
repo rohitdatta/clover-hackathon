@@ -24,8 +24,8 @@
         <div class="navbar-header">
             <div class="container">
                 
-                  <a class="navbar-brand" href="#">Authenticator Project 2B</a>
-                  {% if active_page == "home" or active_page == "portal" %}
+                  <a class="navbar-brand" href="/">Authenticator Project 2B</a>
+                  {% if request.path == "/" or request.path == "/logged_in" %}
                       {% if session.get("logged_in") %}
                           <a href="/logout"><button type="submit" class="btn btn-success logbutton navbar-right">Log Out</button></a>
                       {% else %}
