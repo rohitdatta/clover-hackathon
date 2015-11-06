@@ -20,7 +20,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     ​
     <!-- Custom styles for this template -->
-    <link href="{{url_for('static', filename='jumbotron.css')}}" rel="stylesheet"> ​
+    <!-- <link href="{{url_for('static', filename='jumbotron-narrow.css')}}" rel="stylesheet"> ​ -->
+    <link href="../static/jumbotron.css" rel="stylesheet">
     <script type="text/javascript" src="{{url_for('static', filename='qrcode.js')}}"></script>
 </head>
 ​
@@ -40,59 +41,33 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-            <button type="submit" class="btn btn-success">Log Out</button>
+            <button type="submit" class="btn btn-success logout text-right" id="logout">Log Out</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
         ​
         <div class="jumbotron">
-            <h1>Register</h1>
-            <p class="lead">Scan QR Code:</p>
-            <center>
-                <div id="qrcode"></div>
-            </center>
+            <h1>Hello</h1>
         </div>
+
+        
         ​ ​
         <footer class="footer">
             <p>Jeffrey, Jose, Michelle, Rohit, Sam</p>
         </footer>
         ​
     </div>
-    <!-- /container -->
+
     <script type="text/javascript">
-        var getCode;
-        var getQR = function() {
-            $.get("http://localhost:5000/login/get_code", function(data) {
-                new QRCode(document.getElementById("qrcode"), data);
-                getCode = data;
-                check_code(getCode);
-            });
-        }
-        var passed = true;
-        getQR();
-
-
-        var check_code = function(code) {
-                if (passed) {
-                    $.post("http://localhost:5000/login/get_cookie", {
-                        'one_time_code': code
-                    }, function(data) {
-                        if (data == "True") {
-                            passed = false;
-                            alert(data);
-                            location.href = "http://www.google.com";
-                        } else {
-                            setTimeout(QRCode, 1000);
-                        }
-                    });
-
-                } else {
-                    //clearInterval(interval);
-                }
-            }
-            //var interval = setInterval(check_code, 5000);
+        $("#logout").click(function(event) { 
+            event.preventDefault();
+            alert("You have been logged out.");
+        });
     </script>
+
 </body>
+
+
 
 </html>
