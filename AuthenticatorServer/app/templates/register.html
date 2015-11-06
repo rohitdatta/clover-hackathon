@@ -48,34 +48,41 @@
     <!-- /container -->
     <script type="text/javascript">
         var getCode;
+        var checks = 0;
         var getQR = function() {
+            $("#qrcode").empty();
             $.get("http://localhost:5000/login/get_code", function(data) {
                 new QRCode(document.getElementById("qrcode"), data);
                 getCode = data;
-                check_code(getCode);
+                setTimeout(check_code, 1500);
             });
         }
-        var passed = true;
+
         getQR();
 
 
-        var check_code = function(code) {
-                if (passed) {
-                    $.post("http://localhost:5000/login/get_cookie", {
-                        'one_time_code': code
-                    }, function(data) {
-                        if (data == "True") {
-                            passed = false;
-                            alert(data);
-                            location.href = "http://www.google.com";
-                        } else {
-                            setTimeout(QRCode, 1000);
+        var check_code = function() {
+                var code = getCode;
+                checks += 1;
+                $.post("http://localhost:5000/login/get_cookie", {
+                    'one_time_code': code
+                }, function(data) {
+                    if (data == "True") {
+                        passed = false;
+                        alert(data);
+                        location.href = "http://www.google.com";
+                    } else {
+                        if (checks < 8)
+                            setTimeout(check_code, 1500);
+                        else
+                        {
+                            checks = 0;
+                            setTimeout(getQR, 500);
                         }
-                    });
+                    }
+                });
 
-                } else {
-                    //clearInterval(interval);
-                }
+
             }
             //var interval = setInterval(check_code, 5000);
     </script>
