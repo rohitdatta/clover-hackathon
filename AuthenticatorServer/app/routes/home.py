@@ -17,4 +17,4 @@ def is_logged_in():
 @home.route('/logout', methods=['GET'])
 def clear_db():
 	session['logged_in'] = None
-	return render_template("index.html")
+	return home_page()

@@ -29,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UICKeyChainStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIColor+FlatColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>34558AF77F7B398E1BC5914C1F6D6DFB</key>
+		<key>1C0843D07721E0BA0A0DF4CC4B2B8930</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B42FE58F9FD2809388EF7EFB8349F72</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,17 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58ABFF666D73D764F423A61421835FAB</key>
+		<key>931DB63DDBA60505C0DFDC3A1741CEDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A612FA2910317246AABB109C35B5EA33</key>
+		<key>A4FA20B95C042B500E3DACA0129D488E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3E2944BE4908340EB642D9A00C8071C</key>
+		<key>EFBA30705330C433ADA9BFDBAA904C86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC25E17683478D0E5839C125354AFE6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

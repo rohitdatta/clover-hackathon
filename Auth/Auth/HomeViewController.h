@@ -12,4 +12,7 @@
 
 @interface HomeViewController : UIViewController <QRCodeReaderDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+
+
 @end

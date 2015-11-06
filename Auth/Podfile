@@ -6,7 +6,8 @@ pod 'QRCodeReaderViewController', '~> 4.0.0'
 pod 'FCUUID'
 pod 'AFNetworking'
 pod 'AFNetworking-Synchronous/2.x'
-
+pod 'UIColor+FlatColors'
+pod 'Realm'
 end
 
 target 'AuthTests' do
